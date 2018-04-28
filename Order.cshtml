@@ -78,14 +78,14 @@
             </li>
             <li class="email">
                 <div class="fieldcontainer" data-role="fieldcontain">
-                    <label for="orderEmail">Your Email Address</label>
+                    <label for="orderEmail">Your Name</label>
                     <input type="text" id="orderEmail" name="orderEmail" @Validation.For("orderEmail")/>                
                     <div>@Html.ValidationMessage("orderEmail")</div>
                 </div>
             </li>
             <li class="shiping">
                 <div class="fieldcontainer" data-role="fieldcontain">
-                    <label for="orderShipping">Shipping Address</label>
+                    <label for="orderShipping">How hungry are you?</label>
                     <textarea rows="4" id="orderShipping" name="orderShipping" @Validation.For("orderShipping")></textarea>               
                     <div>@Html.ValidationMessage("orderShipping")</div>
                 </div>
