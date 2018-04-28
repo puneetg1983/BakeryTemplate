@@ -229,8 +229,8 @@ div#featuredProduct {
     }
     
     a.order-button {
-        background-color: #a52f09;
-        border: 1px solid #712107;
+        background-color: #490f75;
+        border: 1px solid #2e074c;
         color: #fdfcf7;
         float: right;
         padding: 2px 7px;
@@ -364,8 +364,8 @@ fieldset {
         }
     
         .current .step-number {
-            background-color: #a52f09;
-            border-color: #712107;
+            background-color: #490f75;
+            border-color: #2e074c;
             color: #fefefe;
         }
 
