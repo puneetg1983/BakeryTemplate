@@ -1,5 +1,6 @@
 ﻿/* General  
-----------------------------------------------------------*/
+----------------------------------------------------------
+url(../Images/bkg.png)*/
 html {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@ nav, section {
 }
 
 body {
-    background: #fff url(../Images/bkg.png) repeat-x top left;
+    background: #fff repeat-x top left;
     color: #696969;
     font-family: Tahoma, Verdana, Helvetica, Sans-Serif;
     font-size: .75em;
