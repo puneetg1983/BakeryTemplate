@@ -42,7 +42,7 @@ a:active {
 input[type=submit] {
         background-color: #490f75;
         border: 1px solid #2e074c;
-        color: #fdfcf7;
+        color: #ffffff;
         cursor: pointer;
     
         /*CSS3 properties
@@ -113,8 +113,8 @@ nav ul {
 /* Featured Product
 ----------------------------------------------------------*/
 div#featuredProduct {
-    background-color: #fdfcf7;
-    border: 4px solid #e6e3d8;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
     height: 300px;
     margin: 20px auto;
     width: 920px;
