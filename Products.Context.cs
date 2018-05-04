@@ -10,16 +10,27 @@
 namespace buildbakery
 {
     using System;
+    using System.Data.Common;
     using System.Data.Entity;
+    using System.Data.Entity.Core.EntityClient;
     using System.Data.Entity.Infrastructure;
     
     public partial class buggybakerydbEntities : DbContext
     {
         public buggybakerydbEntities()
-            : base("name=buggybakerydbEntities")
-        {
+             : base(GetSqlConnection(), true)
+        {            
         }
-    
+
+        public static DbConnection GetSqlConnection()
+        {            
+            EntityConnectionStringBuilder entityBuilder = new EntityConnectionStringBuilder();
+            entityBuilder.Provider = "System.Data.SqlClient";
+            entityBuilder.ProviderConnectionString = "data source=tcp:i158gc9m86.database.windows.net;initial catalog=buggybakerydb;user id=apurvajo@i158gc9m86;password=iis6!dfu;MultipleActiveResultSets=True";
+            entityBuilder.Metadata = "res://*/Products.csdl|res://*/Products.ssdl|res://*/Products.msl";
+            return new EntityConnection(entityBuilder.ToString());
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
